@@ -22,7 +22,7 @@
     </ul>
 <br>
     <h2>Troubleshooting</h2>
-    <p>If product details are not loading on the page, ensure that the database URI is accurate and is in string format without any trailing semicolons after the URI in the .env file. Also be aware that the .env file must be in the root directory in order to ensure proper functionality. If this does not resolve issues, refresh or restart the application by killing both localhost:3000 and localhost:8080 and running 
+    <p>If product details are not loading on the page, ensure that the database URI is accurate and is in string format without any trailing semicolons after the URI in the .env file. <br> Also be aware that the .env file must be in the root directory in order to ensure proper functionality. <br>If this does not resolve issues, refresh or restart the application by killing both localhost:3000 and localhost:8080 and running 
     <pre>npm run dev</pre>
     </p>
 </div>
