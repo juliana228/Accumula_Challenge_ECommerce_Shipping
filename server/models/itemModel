@@ -1,0 +1,26 @@
+const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
+
+const MONGO_URI = process.env.MONGO_DB_URI;
+
+mongoose
+  .connect(MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: 'AccumulaChallenge',
+  })
+  .then(() => console.log('Connected to the MongoDB'))
+  .catch((err) => console.log(err));
+
+const Schema = mongoose.Schema;
+
+const itemSchema = new Schema({
+  productId: { type: Number, required: true },
+  productName: { type: String, required: true },
+  inventoryQuantity: { type: Number, required: true },
+  shipOnWeekends: { type: Boolean, required: true },
+  maxBusinessDaysToShip: { type: Number, required: true },
+});
+
+const Items = mongoose.model('Items', itemSchema);
+module.exports = { Items };

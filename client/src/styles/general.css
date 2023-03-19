@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(244, 238, 238);
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-width: 10rem;
+  margin: 1.5rem;
+  padding: 2rem;
+}
+
+.titleAndDateForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
