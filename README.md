@@ -3,13 +3,13 @@
     <h2>How to start application</h2>
     <ul>
         <li>
-        First, clone this repository to your local machine. Make sure you are cloning the main branch. 
+        First, clone this repository to your local machine. Make sure you are cloning from the main branch. 
         </li>
         <li>
-        Next, open the repository on your local machine. 
+        Next, open the repository on your local machine in a code editor of your choice. 
         </li>
         <li>
-        Navigate to the root directory of the cloned repository and execute the following command to install all dependencies: 
+        Navigate to the root directory of the cloned repo and execute the following command to install all dependencies: 
         <pre>npm install</pre>
         </li>
         <li>
